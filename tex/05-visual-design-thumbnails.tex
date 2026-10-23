@@ -1,0 +1,82 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=2.2cm,top=2.6cm,bottom=2.4cm]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{tcolorbox}
+\usepackage{amssymb}
+\usepackage[colorlinks=true,urlcolor=MidnightBlue,linkcolor=MidnightBlue]{hyperref}
+
+\definecolor{accent}{HTML}{0F766E}
+\definecolor{accent2}{HTML}{B45309}
+\definecolor{softgray}{HTML}{6B7280}
+
+\titleformat{\section}{\Large\bfseries\color{accent}}{\thesection.}{0.6em}{}
+\titleformat{\subsection}{\large\bfseries\color{accent2}}{\thesubsection}{0.6em}{}
+\titlespacing*{\section}{0pt}{14pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt}{4pt}
+
+\setlist[itemize]{leftmargin=1.6em,itemsep=5pt,parsep=0pt}
+\newcommand{\tip}[2]{\item \textbf{#1.}\enspace #2}
+\newcommand{\tlabel}{\textcolor{accent}{\small$\blacktriangleright$}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\small\color{softgray}Content Creation Playbook}
+\fancyfoot[R]{\small\color{softgray}\thepage}
+
+\newcommand{\docbanner}[3]{%
+  \begin{center}
+    {\color{accent}\rule{\textwidth}{1.4pt}}\\[10pt]
+    {\Huge\bfseries\color{black} #1}\\[8pt]
+    {\large\color{softgray} #2}\\[8pt]
+    {\small\color{softgray} #3}\\[6pt]
+    {\color{accent}\rule{\textwidth}{1.4pt}}
+  \end{center}
+  \vspace{6pt}
+}
+\begin{document}
+\docbanner{Visual Design and Thumbnails}{12 ways to improve images, covers, and thumbnails}{Adapted for thumbnails, social images, and photography from design and click-psychology guides}
+\begin{tcolorbox}[colback=accent!5,colframe=accent,boxrule=0.8pt,arc=2pt,left=8pt,right=8pt,top=6pt,bottom=6pt]
+\small Packaging decides whether great content gets seen. Design for the 120-pixel preview: one dominant subject, high contrast, and minimal text, tested at thumbnail size before publishing.
+\end{tcolorbox}
+\vspace{6pt}
+\section*{Composition and Light}
+\begin{itemize}[label=\tlabel]
+\tip{1. One dominant subject per image}{Everything else supports the focal point; if everything fights equally, nothing wins.}
+\tip{2. Place subjects on the rule-of-thirds grid}{Faces near an intersection, not dead center; fill 30-60\% of the frame.}
+\tip{3. Shoot flat, even light on faces}{Clarity beats drama at small sizes; add shadow in post, fix underexposure never.}
+\tip{4. Separate subject from background}{Tonal contrast, a subtle blur, or a subject stroke; keep backgrounds quieter than the subject.}
+\tip{5. Use diagonal energy}{Tilted heads and corner-to-corner lines read as movement; static horizontals read as passive.}
+\tip{6. Leave breathing room for platform crops}{Vertical-first for social; keep key elements away from edges.}
+\end{itemize}
+\section*{Design Details}
+\begin{itemize}[label=\tlabel]
+\tip{7. Limit text to 3-4 bold words}{Heavy-weight font, outlined or shadowed, in the upper third; text is a supporting actor.}
+\tip{8. Stick to 2-3 colors}{Complementary pairs (blue/orange, yellow/purple) guide focus; consistency builds brand.}
+\tip{9. Push expressions past comfort}{What looks over-the-top live reads natural at thumbnail size; clear eyes win clicks.}
+\tip{10. Apply the 3-element rule}{Face, key object, short text - nothing else in the frame.}
+\end{itemize}
+\section*{Testing}
+\begin{itemize}[label=\tlabel]
+\tip{11. Preview at 120 pixels before publishing}{If the subject doesn't read on a phone screen, crop tighter or simplify.}
+\tip{12. Change one design variable per test}{Composition, lighting, or expression - isolate the cause of the click-rate change.}
+\end{itemize}
+\section*{Sources}
+\begin{itemize}[label={},leftmargin=0.9em,itemsep=1pt]
+\footnotesize
+\item \href{https://www.wisdomai.com/insights/Creator%20Science/youtube-thumbnails-composition-rule-of-thirds-thumbnail-design-6449a1b7}{Creator Science - How to Make Great YouTube Thumbnails When You're Not a Designer} \\ {\color{softgray}\url{https://www.wisdomai.com/insights/Creator%20Science/youtube-thumbnails-composition-rule-of-thirds-thumbnail-design-6449a1b7}}
+\item \href{https://www.henrydavidphotography.com/resources/blog/youtube-thumbnail-design-guide}{Henry David Photography - YouTube Thumbnail Design Guide for 2026} \\ {\color{softgray}\url{https://www.henrydavidphotography.com/resources/blog/youtube-thumbnail-design-guide}}
+\item \href{https://www.thumbnailcreator.com/blog/thumbnail-composition-guide}{Thumbnail Creator - Ultimate Guide to Thumbnail Composition} \\ {\color{softgray}\url{https://www.thumbnailcreator.com/blog/thumbnail-composition-guide}}
+\item \href{https://www.adobe.com/express/learn/blog/social-media-photography-tips}{Adobe Express - 7 Proven social media photography tips} \\ {\color{softgray}\url{https://www.adobe.com/express/learn/blog/social-media-photography-tips}}
+\item \href{https://www.debbiephotos.com/how-to-create-strong-thumbnail-images/}{Debbie Photos - How to Create Strong Thumbnail Images} \\ {\color{softgray}\url{https://www.debbiephotos.com/how-to-create-strong-thumbnail-images/}}
+\item \href{https://www.photoroom.com/blog/make-youtube-thumbnails}{Photoroom - How to make eye-catching YouTube thumbnails} \\ {\color{softgray}\url{https://www.photoroom.com/blog/make-youtube-thumbnails}}
+\end{itemize}
+\normalsize
+\end{document}

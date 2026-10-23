@@ -1,0 +1,135 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=2.2cm,top=2.6cm,bottom=2.4cm]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{tcolorbox}
+\usepackage{amssymb}
+\usepackage[colorlinks=true,urlcolor=MidnightBlue,linkcolor=MidnightBlue]{hyperref}
+
+\definecolor{accent}{HTML}{0F766E}
+\definecolor{accent2}{HTML}{B45309}
+\definecolor{softgray}{HTML}{6B7280}
+
+\titleformat{\section}{\Large\bfseries\color{accent}}{\thesection.}{0.6em}{}
+\titleformat{\subsection}{\large\bfseries\color{accent2}}{\thesubsection}{0.6em}{}
+\titlespacing*{\section}{0pt}{14pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt}{4pt}
+
+\setlist[itemize]{leftmargin=1.6em,itemsep=5pt,parsep=0pt}
+\newcommand{\tip}[2]{\item \textbf{#1.}\enspace #2}
+\newcommand{\tlabel}{\textcolor{accent}{\small$\blacktriangleright$}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\small\color{softgray}Content Creation Playbook}
+\fancyfoot[R]{\small\color{softgray}\thepage}
+
+\newcommand{\docbanner}[3]{%
+  \begin{center}
+    {\color{accent}\rule{\textwidth}{1.4pt}}\\[10pt]
+    {\Huge\bfseries\color{black} #1}\\[8pt]
+    {\large\color{softgray} #2}\\[8pt]
+    {\small\color{softgray} #3}\\[6pt]
+    {\color{accent}\rule{\textwidth}{1.4pt}}
+  \end{center}
+  \vspace{6pt}
+}
+\begin{document}
+\docbanner{50 Ways to Improve Your Content Creation}{The cross-cutting playbook}{Compiled from web research across creator guides, platform data, and craft manuals - October 2026}
+\begin{tcolorbox}[colback=accent!5,colframe=accent,boxrule=0.8pt,arc=2pt,left=8pt,right=8pt,top=6pt,bottom=6pt]
+\small These 50 moves apply to every content type. Each is one sentence you can act on today; the companion PDFs in this repo adapt them per medium. Change one variable at a time, measure weekly, and keep what survives contact with your audience.
+\end{tcolorbox}
+\vspace{6pt}
+\section*{Strategy and Positioning}
+\begin{itemize}[label=\tlabel]
+\tip{1. Niche down to one sentence}{Define who you help, what problem you solve, and why your answer is different - then put it in your bio, pinned post, or channel header.}
+\tip{2. Pick 3-5 content pillars}{Every post should ladder up to a pillar; pillars give your calendar structure and your audience a reason to subscribe.}
+\tip{3. Hyper-specify your audience}{'Physicians curious about AI' beats 'people interested in tech' - specificity is what makes content feel personal.}
+\tip{4. Study the competition weekly}{Steal structures and formats that demonstrably work; never steal substance.}
+\tip{5. Write the title before the content}{If the promise isn't worth a title, the content isn't worth making.}
+\tip{6. Give every piece one measurable goal}{Views, saves, replies, or conversions - pick one and judge the piece by it.}
+\tip{7. Keep a running idea backlog}{Mine your comments, inbox, and daily questions; the backlog kills the blank page.}
+\end{itemize}
+\section*{Craft and Storytelling}
+\begin{itemize}[label=\tlabel]
+\tip{8. Lead with the hook, context second}{The single most interesting thing goes in the first 5-10 seconds; context is earned after attention is granted.}
+\tip{9. Front-load the payoff}{Deliver the core answer or insight within the first 25-40\% of the piece, then deepen it.}
+\tip{10. Open a loop every 60-90 seconds}{Tease what's coming, ask a question you'll answer later, and close loops deliberately.}
+\tip{11. Apply the so-what test}{If deleting a sentence loses the audience nothing, delete it - density is retention.}
+\tip{12. Use problem-tension-payoff structure}{Open with a problem, build stakes, end with a clear takeaway the viewer can restate.}
+\tip{13. Show proof, don't claim it}{Demonstrate the finished result early instead of promising it verbally.}
+\tip{14. Vary pacing on purpose}{Alternate fast and slow segments; rhythm contrast fights cognitive fatigue.}
+\tip{15. Distribute micro-payoffs}{Small wins of value throughout beat one big payoff at the end.}
+\end{itemize}
+\section*{Production Quality}
+\begin{itemize}[label=\tlabel]
+\tip{16. Fix audio before video}{Clear audio beats sharp footage; listeners forgive soft video, never bad sound.}
+\tip{17. Light simply and evenly}{One key light or a window beats a ring of gadgets; flat, even light reads at small sizes.}
+\tip{18. Compose with the rule of thirds}{Put the subject near a grid intersection with an uncluttered background.}
+\tip{19. Record test clips before full takes}{Check levels, framing, and noise in 30 seconds, not after a 20-minute take.}
+\tip{20. Batch your production}{Write in one block, shoot in another, edit in a third - context switching is the silent killer.}
+\tip{21. Build a repeatable workflow}{Templates, presets, and checklists turn production from an event into a routine.}
+\tip{22. Cut every pause that adds nothing}{Tight editing keeps energy up; dead air is where audiences leave.}
+\end{itemize}
+\section*{Packaging}
+\begin{itemize}[label=\tlabel]
+\tip{23. Make the thumbnail or cover one dominant subject}{One focal point at 60\%+ of the frame beats three competing ones.}
+\tip{24. Limit packaging text to 3-4 words}{Big, bold, high-contrast; text is a supporting actor, not the star.}
+\tip{25. Preview packaging at thumbnail size}{If it doesn't read at 120 pixels wide, redesign before publishing.}
+\tip{26. Write specific, curiosity-honest titles}{Specific beats clever; the hook must match what the content delivers.}
+\tip{27. Keep captions and on-screen text always on}{A large share of viewing is sound-off; captions are retention and accessibility at once.}
+\tip{28. Lock a consistent visual brand}{Two or three colors and one font, everywhere, builds recognition compounds.}
+\end{itemize}
+\section*{Distribution and Repurposing}
+\begin{itemize}[label=\tlabel]
+\tip{29. Publish on a fixed cadence}{A schedule the audience can rely on outperforms sporadic brilliance.}
+\tip{30. Repurpose every long piece into shorts}{One long video becomes 3-5 clips; get more reps without more filming days.}
+\tip{31. Optimize per platform, don't blind cross-post}{Adjust length, caption style, and music to each algorithm; strip watermarks.}
+\tip{32. Post when your audience is actually online}{Platform insights show you when; timing is free reach.}
+\tip{33. Build an email list early}{It's the only audience the algorithm can't take from you.}
+\tip{34. Do SEO and AEO basics}{Keywords in titles/descriptions and clear answers to specific questions win search and answer engines.}
+\tip{35. Collaborate on purpose}{Guest swaps and duets borrow trust; pick partners your audience already respects.}
+\end{itemize}
+\section*{Engagement and Community}
+\begin{itemize}[label=\tlabel]
+\tip{36. Make one clear call to action per piece}{One ask converts; three asks cancel each other out.}
+\tip{37. Mine comments for content}{Reader questions are pre-validated topics - answer them publicly.}
+\tip{38. Ask questions that invite replies}{End pieces with a question people can answer from experience.}
+\tip{39. Feature your audience}{User-generated content and reader spotlights turn viewers into co-creators.}
+\tip{40. Reply while the audience is small}{Early reply culture compounds into the community you'll have later.}
+\end{itemize}
+\section*{Analytics and Iteration}
+\begin{itemize}[label=\tlabel]
+\tip{41. Review analytics weekly}{A fixed weekly review beats daily doom-scrolling the dashboard.}
+\tip{42. Track saves and shares over likes}{Saves and shares predict reach better; likes are applause, saves are intent.}
+\tip{43. A/B test hooks, thumbnails, subject lines}{Change one variable, keep the winner, and log the result.}
+\tip{44. Read retention curves by timestamp}{Find the exact second audiences leave and fix that moment, not the whole video.}
+\tip{45. Kill your bottom third}{Retire the formats and topics in the bottom third of performance every month.}
+\end{itemize}
+\section*{Systems and Sustainability}
+\begin{itemize}[label=\tlabel]
+\tip{46. Keep slack in the calendar}{A calendar with room to pivot survives trends and life events; a full one collapses.}
+\tip{47. Use AI for structure, verify facts yourself}{AI drafts outlines and speeds iteration; accuracy and voice stay human.}
+\tip{48. Maintain a media kit}{Stats, past work, and contact info on one page make opportunities find you.}
+\tip{49. Protect the creator, not just the output}{Sustainable routines and scheduled downtime prevent the burnout that kills channels.}
+\tip{50. Ship before it's perfect}{Publish, iterate in public, and let version 2 be informed by real data.}
+\end{itemize}
+\section*{Sources}
+\begin{itemize}[label={},leftmargin=0.9em,itemsep=1pt]
+\footnotesize
+\item \href{https://mysocial.io/blog/content-creation/}{MySocial - Content Creation: What It Is and How to Scale It} \\ {\color{softgray}\url{https://mysocial.io/blog/content-creation/}}
+\item \href{https://blog.hootsuite.com/social-media-content-creation/}{Hootsuite - Social media content creation: 15 pro tips} \\ {\color{softgray}\url{https://blog.hootsuite.com/social-media-content-creation/}}
+\item \href{https://www.backstage.com/magazine/article/content-creator-skills-79954/}{Backstage - 7 Essential Skills Every Content Creator Needs} \\ {\color{softgray}\url{https://www.backstage.com/magazine/article/content-creator-skills-79954/}}
+\item \href{https://www.bluehost.com/blog/how-to-become-a-content-creator/}{Bluehost - How to Become a Content Creator in 2026} \\ {\color{softgray}\url{https://www.bluehost.com/blog/how-to-become-a-content-creator/}}
+\item \href{https://designrr.io/content-marketing-tips/}{Designrr - Content Marketing Tips} \\ {\color{softgray}\url{https://designrr.io/content-marketing-tips/}}
+\item \href{https://www.accesscreative.ac.uk/blog/what-skills-do-you-need-as-a-content-creator/}{Access Creative - What skills do you need as a content creator?} \\ {\color{softgray}\url{https://www.accesscreative.ac.uk/blog/what-skills-do-you-need-as-a-content-creator/}}
+\end{itemize}
+\normalsize
+\end{document}

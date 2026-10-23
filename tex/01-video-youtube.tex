@@ -1,0 +1,81 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=2.2cm,top=2.6cm,bottom=2.4cm]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{tcolorbox}
+\usepackage{amssymb}
+\usepackage[colorlinks=true,urlcolor=MidnightBlue,linkcolor=MidnightBlue]{hyperref}
+
+\definecolor{accent}{HTML}{0F766E}
+\definecolor{accent2}{HTML}{B45309}
+\definecolor{softgray}{HTML}{6B7280}
+
+\titleformat{\section}{\Large\bfseries\color{accent}}{\thesection.}{0.6em}{}
+\titleformat{\subsection}{\large\bfseries\color{accent2}}{\thesubsection}{0.6em}{}
+\titlespacing*{\section}{0pt}{14pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt}{4pt}
+
+\setlist[itemize]{leftmargin=1.6em,itemsep=5pt,parsep=0pt}
+\newcommand{\tip}[2]{\item \textbf{#1.}\enspace #2}
+\newcommand{\tlabel}{\textcolor{accent}{\small$\blacktriangleright$}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\small\color{softgray}Content Creation Playbook}
+\fancyfoot[R]{\small\color{softgray}\thepage}
+
+\newcommand{\docbanner}[3]{%
+  \begin{center}
+    {\color{accent}\rule{\textwidth}{1.4pt}}\\[10pt]
+    {\Huge\bfseries\color{black} #1}\\[8pt]
+    {\large\color{softgray} #2}\\[8pt]
+    {\small\color{softgray} #3}\\[6pt]
+    {\color{accent}\rule{\textwidth}{1.4pt}}
+  \end{center}
+  \vspace{6pt}
+}
+\begin{document}
+\docbanner{Video and YouTube}{12 ways to improve long-form video}{Adapted for long-form video and YouTube from retention research and hook-optimization guides}
+\begin{tcolorbox}[colback=accent!5,colframe=accent,boxrule=0.8pt,arc=2pt,left=8pt,right=8pt,top=6pt,bottom=6pt]
+\small On YouTube, retention architecture beats production polish. The metrics that matter: 30-second retention (aim 70\%+), the retention curve's drop-off timestamps, and click-through rate.
+\end{tcolorbox}
+\vspace{6pt}
+\section*{The First 30 Seconds}
+\begin{itemize}[label=\tlabel]
+\tip{1. Hook within 5-10 seconds}{State the exact outcome the viewer gets; a promise confirmation, pattern interrupt, or immediate payoff.}
+\tip{2. Match the hook to the title exactly}{The viewer needs immediate visual and spoken confirmation they're in the right place.}
+\tip{3. Show visual proof in under 10 seconds}{Display the finished result before explaining how you got it.}
+\tip{4. Cut all preamble}{No logo stings, channel animations, or throat-clearing - be into step one before the 25-second mark.}
+\tip{5. Open a curiosity loop before step one}{Plant a seed about the mistake or shortcut coming later, then pay it off.}
+\end{itemize}
+\section*{Holding Attention}
+\begin{itemize}[label=\tlabel]
+\tip{6. Front-load value by the 25-40\% mark}{Deliver the core answer early; depth and nuance come after the payoff, not before it.}
+\tip{7. Interrupt patterns every 30-60 seconds}{B-roll, graphics, angle changes, and cuts re-engage drifting attention.}
+\tip{8. Re-hook every 60-90 seconds}{Micro-teasers and open loops at section boundaries stop silent bleed.}
+\tip{9. Distribute micro-payoffs}{Small wins of value throughout the video, not one payoff at the end.}
+\tip{10. Make the viewer the protagonist}{Use 'you' over 'I'; every section should be a step toward the question the video answers.}
+\end{itemize}
+\section*{Structure and Iteration}
+\begin{itemize}[label=\tlabel]
+\tip{11. Add timestamped chapters}{Navigability is retention; let viewers self-select without leaving.}
+\tip{12. Film two hooks and compare}{Publish the stronger opening, check retention at 48 hours, and reuse the loser later.}
+\tip{13. End with one specific next action}{A single end-screen target beats a menu of options.}
+\end{itemize}
+\section*{Sources}
+\begin{itemize}[label={},leftmargin=0.9em,itemsep=1pt]
+\footnotesize
+\item \href{https://www.tubeanalytics.net/blog/youtube-video-structure-retention-optimization-guide}{TubeAnalytics - YouTube Video Structure and Retention Optimization} \\ {\color{softgray}\url{https://www.tubeanalytics.net/blog/youtube-video-structure-retention-optimization-guide}}
+\item \href{https://www.tubeanalytics.net/blog/youtube-video-hook-first-30-seconds}{TubeAnalytics - How to Hook Viewers in the First 30 Seconds} \\ {\color{softgray}\url{https://www.tubeanalytics.net/blog/youtube-video-hook-first-30-seconds}}
+\item \href{https://crayo.ai/blog/youtube-hooks}{Crayo - 7 Ways to Write YouTube Hooks That Keep Viewers Watching} \\ {\color{softgray}\url{https://crayo.ai/blog/youtube-hooks}}
+\item \href{https://ltx.io/blog/short-form-video}{LTX - Short-Form Video: Strategy, Formats, and AI Creation Guide} \\ {\color{softgray}\url{https://ltx.io/blog/short-form-video}}
+\end{itemize}
+\normalsize
+\end{document}

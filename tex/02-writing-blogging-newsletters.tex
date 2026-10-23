@@ -1,0 +1,82 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=2.2cm,top=2.6cm,bottom=2.4cm]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{tcolorbox}
+\usepackage{amssymb}
+\usepackage[colorlinks=true,urlcolor=MidnightBlue,linkcolor=MidnightBlue]{hyperref}
+
+\definecolor{accent}{HTML}{0F766E}
+\definecolor{accent2}{HTML}{B45309}
+\definecolor{softgray}{HTML}{6B7280}
+
+\titleformat{\section}{\Large\bfseries\color{accent}}{\thesection.}{0.6em}{}
+\titleformat{\subsection}{\large\bfseries\color{accent2}}{\thesubsection}{0.6em}{}
+\titlespacing*{\section}{0pt}{14pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt}{4pt}
+
+\setlist[itemize]{leftmargin=1.6em,itemsep=5pt,parsep=0pt}
+\newcommand{\tip}[2]{\item \textbf{#1.}\enspace #2}
+\newcommand{\tlabel}{\textcolor{accent}{\small$\blacktriangleright$}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\small\color{softgray}Content Creation Playbook}
+\fancyfoot[R]{\small\color{softgray}\thepage}
+
+\newcommand{\docbanner}[3]{%
+  \begin{center}
+    {\color{accent}\rule{\textwidth}{1.4pt}}\\[10pt]
+    {\Huge\bfseries\color{black} #1}\\[8pt]
+    {\large\color{softgray} #2}\\[8pt]
+    {\small\color{softgray} #3}\\[6pt]
+    {\color{accent}\rule{\textwidth}{1.4pt}}
+  \end{center}
+  \vspace{6pt}
+}
+\begin{document}
+\docbanner{Writing, Blogging, and Newsletters}{12 ways to improve the written word}{Adapted for blogs, articles, and email newsletters from engagement and deliverability research}
+\begin{tcolorbox}[colback=accent!5,colframe=accent,boxrule=0.8pt,arc=2pt,left=8pt,right=8pt,top=6pt,bottom=6pt]
+\small Written content competes with the scroll and the inbox. Scannability, one-CTA discipline, and ruthless curation are what separate read from skimmed from deleted.
+\end{tcolorbox}
+\vspace{6pt}
+\section*{Opening and Structure}
+\begin{itemize}[label=\tlabel]
+\tip{1. Write the headline or subject line first}{Specific and curiosity-honest beats clever or clickbaity; the promise sets the article's contract.}
+\tip{2. Hook the preview text}{The first sentence of an email shows in the inbox - write it as if the delete button is next to it.}
+\tip{3. Keep paragraphs to 2-3 sentences}{Subheadings, bullets, bold key phrases, and white space respect the reader's time.}
+\tip{4. Stay under 300-500 words for email}{Newsletters link out to depth; they don't reproduce it.}
+\end{itemize}
+\section*{Substance and Voice}
+\begin{itemize}[label=\tlabel]
+\tip{5. Use concrete details over generic claims}{Specific numbers, names, and moments are what readers remember and repeat.}
+\tip{6. Include failures with the wins}{Vulnerability builds trust; connect individual stories to universal experiences.}
+\tip{7. Bold every unclear term and link it}{If a reader might not know a concept, hyperlink the explanation inline.}
+\tip{8. Curate ruthlessly}{Deep insight on two topics beats surface coverage of ten.}
+\end{itemize}
+\section*{Conversion and Cadence}
+\begin{itemize}[label=\tlabel]
+\tip{9. One primary CTA per piece}{Make secondary actions hypertext, not buttons; the ask must fit the content's natural conclusion.}
+\tip{10. Segment your list}{By interest, engagement level, or journey stage - then tailor subject lines and intros to each group.}
+\tip{11. A/B test subject lines and placements}{Test one element at a time; you were sending something either way.}
+\tip{12. Draft ahead on a fixed schedule}{Never send just to hit the calendar; send only when you have something worth the reader's attention.}
+\end{itemize}
+\section*{Sources}
+\begin{itemize}[label={},leftmargin=0.9em,itemsep=1pt]
+\footnotesize
+\item \href{https://blog.aweber.com/learn/how-to-write-a-newsletter.htm}{AWeber - How to Write a Newsletter That Makes You Unforgettable} \\ {\color{softgray}\url{https://blog.aweber.com/learn/how-to-write-a-newsletter.htm}}
+\item \href{https://www.beehiiv.com/blog/8-ways-build-engaged-newsletter}{beehiiv - 8 Tactics for Building a Highly Engaged Newsletter} \\ {\color{softgray}\url{https://www.beehiiv.com/blog/8-ways-build-engaged-newsletter}}
+\item \href{https://www.fastcompany.com/91228587/biz-blogging-101-18-tips-to-keep-your-newsletter-fresh-and-exciting}{Fast Company - 18 tips to keep your newsletter fresh} \\ {\color{softgray}\url{https://www.fastcompany.com/91228587/biz-blogging-101-18-tips-to-keep-your-newsletter-fresh-and-exciting}}
+\item \href{https://www.brafton.com/blog/email-marketing/newsletter-engagement-strategies/}{Brafton - 9 Newsletter Engagement Strategies That Work} \\ {\color{softgray}\url{https://www.brafton.com/blog/email-marketing/newsletter-engagement-strategies/}}
+\item \href{https://insidenews.co.uk/how-to-keep-your-newsletter-audience-engaged/}{Inside News - How to Keep Your Newsletter Audience Engaged} \\ {\color{softgray}\url{https://insidenews.co.uk/how-to-keep-your-newsletter-audience-engaged/}}
+\item \href{https://katethealmostgreat.com/why-you-need-a-blog-newsletter/}{Kate the (Almost) Great - Why You Need a Blog Newsletter} \\ {\color{softgray}\url{https://katethealmostgreat.com/why-you-need-a-blog-newsletter/}}
+\end{itemize}
+\normalsize
+\end{document}
