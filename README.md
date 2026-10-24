@@ -8,9 +8,37 @@
 
 A concise, research-backed playbook for improving content creation, delivered as six
 typeset LaTeX PDFs: one master list of **50 cross-cutting ways** to improve, plus a
-**12-tip guide for each major content type**. Every tip is a single actionable sentence;
-every PDF ends with its source list (4–6 current 2026 creator guides, platform-data
-studies, and craft manuals each).
+**12–13 tip guide for each major content type**. Every tip is a single actionable sentence;
+every PDF ends with its source list.
+
+## The ten highest-impact moves
+
+Distilled from all 111 tips — these are the ones the research backs most strongly,
+and the ones to fix before anything else:
+
+1. **Hook in the first 2–10 seconds.** The first 3 seconds drive most of the completion
+   variance in short-form, and the first 5–10 seconds set YouTube retention. Deliver the
+   exact promise of the title/thumbnail immediately — context is earned, not granted.
+2. **Front-load the payoff.** Deliver the core answer within the first 25–40% of the
+   piece; the rest of the runtime deepens it. Audiences who get value early stay for depth.
+3. **Make packaging read at 120 pixels.** One dominant subject, high contrast, ≤4 words.
+   Thumbnails and covers decide whether great content gets seen at all — preview at
+   thumbnail size before publishing.
+4. **Cut every pause and sentence that earns nothing.** The "so-what test": if deleting
+   a sentence loses the viewer nothing, delete it. Density is retention.
+5. **Publish on a fixed cadence.** Consistency beats sporadic brilliance — the algorithm
+   learns your niche signal from a steady rhythm (3–7×/week short-form; a reliable
+   weekly slot long-form).
+6. **Track saves and shares, not likes.** Saves are 2–3× more valuable to reach than
+   likes across platforms. Likes are applause; saves are intent.
+7. **Re-hook every 60–90 seconds.** Attention decays on a clock: pattern interrupts,
+   open loops, and micro-payoffs distributed through the piece beat one big payoff
+   at the end.
+8. **Give every piece one clear CTA.** One ask converts; three asks cancel each other out.
+9. **Repurpose every long piece into shorts.** One long video becomes 3–5 clips — more
+   reps for the algorithm without more filming days (strip watermarks, optimize per platform).
+10. **Change one variable at a time, weekly.** A/B test hooks, thumbnails, and subject
+    lines in isolation; kill your bottom third of formats monthly.
 
 ## What's inside
 
@@ -92,10 +120,12 @@ without a source behind it.
 python3 build_pdfs.py     # regenerates tex/ and compiles all 6 PDFs (pdflatex ×2 passes each)
 ```
 
-- Requires TeX Live with `tcolorbox`, `titlesec`, `enumitem`, `booktabs`, `amssymb`, `hyperref`
+- Requires TeX Live with `tcolorbox`, `titlesec`, `enumitem`, `booktabs`, `amssymb`,
+  `hyperref`, `microtype`, `xurl`
 - `build_pdfs.py` is the single source of truth — all tips live in its Python data
   structures; `tex/` and `pdf/` are generated artifacts
-- Verified: master list numbers 1–50 across 4 pages; each type guide numbers 1–12 across 2 pages
+- Verified: master list numbers 1–50 across 4 pages; type guides number 1–12 (video 1–13),
+  all compiling with zero overfull/underfull boxes
 
 ## License
 
