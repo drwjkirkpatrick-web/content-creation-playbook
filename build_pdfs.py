@@ -28,7 +28,9 @@ PREAMBLE = r"""\documentclass[11pt]{article}
 \usepackage{booktabs}
 \usepackage{tcolorbox}
 \usepackage{amssymb}
+\usepackage{microtype}
 \usepackage[colorlinks=true,urlcolor=MidnightBlue,linkcolor=MidnightBlue]{hyperref}
+\usepackage{xurl}
 
 \definecolor{accent}{HTML}{0F766E}
 \definecolor{accent2}{HTML}{B45309}
@@ -43,10 +45,11 @@ PREAMBLE = r"""\documentclass[11pt]{article}
 \newcommand{\tip}[2]{\item \textbf{#1.}\enspace #2}
 \newcommand{\tlabel}{\textcolor{accent}{\small$\blacktriangleright$}}
 
+\newcommand{\footertitle}{Content Creation Playbook}
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
-\fancyfoot[L]{\small\color{softgray}Content Creation Playbook}
+\fancyfoot[L]{\small\color{softgray}\footertitle}
 \fancyfoot[R]{\small\color{softgray}\thepage}
 
 \newcommand{\docbanner}[3]{%
@@ -71,6 +74,11 @@ def esc(s: str) -> str:
 
 def emit_doc(doc: dict) -> str:
     body = [PREAMBLE, "\\begin{document}\n"]
+    body.append("\\hypersetup{pdftitle={%s},pdfsubject={%s},"
+                "pdfauthor={drwjkirkpatrick-web},"
+                "pdfkeywords={content creation, playbook, %s}}\n" % (
+        esc(doc["title"]), esc(doc["subtitle"]), doc["file"].split("-", 1)[-1].replace("-", ", ")))
+    body.append("\\renewcommand{\\footertitle}{%s}\n" % esc(doc["title"]))
     body.append("\\docbanner{%s}{%s}{%s}\n" % (
         esc(doc["title"]), esc(doc["subtitle"]), esc(doc["banner"])))
     if doc.get("intro"):
@@ -181,8 +189,6 @@ MASTER = {
         ("Access Creative - What skills do you need as a content creator?", "https://www.accesscreative.ac.uk/blog/what-skills-do-you-need-as-a-content-creator/"),
     ],
 }
-
-DOCS = [MASTER]
 
 VIDEO = {
     "file": "01-video-youtube",
@@ -399,7 +405,7 @@ def main() -> int:
     if failed:
         print(f"\n{len(failed)} failed: {failed}")
         return 1
-    total = sum(len(t) for _, tips in MASTER["groups"] for t in tips)
+    total = sum(len(tips) for _, tips in MASTER["groups"])
     print(f"\nMaster list: {total} tips; per-type docs: {len(DOCS)-1}")
     return 0
 

@@ -1,7 +1,7 @@
 # content-creation-playbook
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Tips](https://img.shields.io/badge/tips-110%20total-0F766E)](#whats-inside)
+[![Tips](https://img.shields.io/badge/tips-111%20total-0F766E)](#whats-inside)
 [![Master list](https://img.shields.io/badge/master%20list-50%20ways-B45309)](pdf/00-master-50-ways.pdf)
 ![Format](https://img.shields.io/badge/format-LaTeX%20PDF-informational)
 ![Scope](https://img.shields.io/badge/sources-2026%20web%20research-blueviolet)
@@ -17,7 +17,7 @@ studies, and craft manuals each).
 | PDF | Focus | Tips |
 |---|---|---|
 | [00 — Master list](pdf/00-master-50-ways.pdf) | Cross-cutting playbook, 8 categories | 50 |
-| [01 — Video & YouTube](pdf/01-video-youtube.pdf) | Long-form video: hooks, retention loops, chapters | 12 |
+| [01 — Video & YouTube](pdf/01-video-youtube.pdf) | Long-form video: hooks, retention loops, chapters | 13 |
 | [02 — Writing, blogging & newsletters](pdf/02-writing-blogging-newsletters.pdf) | Articles & email: scannability, CTAs, cadence | 12 |
 | [03 — Podcasting & audio](pdf/03-podcasting-audio.pdf) | Recording, structure, editing workflow | 12 |
 | [04 — Social & short-form](pdf/04-social-short-form.pdf) | TikTok / Reels / Shorts: the 3-second hook economy | 12 |
